@@ -1,0 +1,144 @@
+
+.swiper-wrapper{
+  padding: 0;
+  display: flex;
+  list-style: none;
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+.swiper-slide{
+  display: flex;
+  align-items: center;
+  padding: 0;
+  width: 224px;
+  height: 72px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: inset 0px 0px 0 1px #EAEAEA;
+}
+
+.swiper-pagination-bullet{
+  width: 12px;
+  height: 12px;
+  background-color: #B5B6BC;
+
+}
+
+.swiper{
+  padding-bottom: 20px;
+}
+
+.swiper::after{
+  content: "";
+  display: block;
+
+  position: absolute;
+  width:24px;
+  height: 81px;
+  background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+
+  top: 7px;
+  right: 0;
+
+  z-index: 1;
+}
+
+.img{
+  display: flex;
+}
+
+.swiper-slide__content{
+
+  margin-top:20px;
+  margin-bottom: 20px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.swiper-slide-hidden{
+  display: none;
+}
+
+.addition-link{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2;
+  font-family: 'TT Lakes', sans-serif;
+}
+
+.brand_addition{
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  display: none;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.brand__additon-icon{
+  display: inline-block;
+  width: 7px;
+  height: 10px;
+  background-color:#F8F8F8 ;
+  background-image: url(/src/assets/img/icons/readmore.svg);
+
+  margin-left:0 ;
+  margin-right: 16px;
+}
+
+.brand__additon-icon--rotated{
+  transform: rotate(180deg);
+}
+
+@media(min-width: 320px){
+  .swiper-slide-hidden{
+    display: flex;
+  }
+}
+
+@media(min-width: 768px) {
+  .brand_addition{
+    display:flex;
+    margin-bottom: 20px;
+  }
+  .swiper-wrapper{
+    flex-wrap: wrap;
+    gap:16px 24px;
+  }
+  .swiper{
+    padding-bottom: 0px;
+  }
+
+  .swiper-pagination{
+    display: none;
+  }
+
+  .swiper-slide-hidden{
+    display: none;
+  }
+  
+
+
+  
+}
+
+@media(min-width:1440px){
+
+
+  .swiper-slide{
+    width: 240px;
+  }
+
+  .swiper-wrapper{
+    gap:16px 32px
+  }
+  .swiper-slide-hidden:nth-child(7){
+    display:flex
+  }
+  .swiper-slide-hidden:nth-child(8){
+    display:flex
+  }
+
+}

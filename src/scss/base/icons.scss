@@ -1,0 +1,206 @@
+.service__button{
+  cursor: pointer;
+  display:flex;
+  align-items: center;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  border: 0;
+  border-radius: 16px;
+  width: 119px;
+  height: 32px;
+  background-color: $light-red;
+
+  transition: .2s linear;
+  &:hover{
+    background-color: transparent;
+    box-shadow:inset 0px 0px 0px 2px $light-red;
+    .service__button-text{
+      color: $light-red;
+    }
+    .service__button-text::after{
+      border-right: 3px solid $light-red;
+      border-bottom: 3px solid $light-red;
+    }
+  }
+  
+}
+
+.submit__button{
+  cursor: pointer;
+  position: absolute;
+  bottom: -54px;
+  right: 0px;
+  border: 0;
+  border-radius: 16px;
+  width: 119px;
+  height: 32px;
+  background-color: $light-red;
+  color: white;
+  font-weight: $font-bold;
+
+
+
+  transition: .2s linear;
+  &:hover{
+    background-color: transparent;
+    box-shadow:inset 0px 0px 0px 2px $light-red;
+    color: $text-color;
+    .service__button-text::after{
+      border-right: 3px solid $light-red;
+      border-bottom: 3px solid $light-red;
+    }
+    
+  }
+}
+
+
+.slider__button{
+  cursor: pointer;
+  position: absolute;
+  top: 16px;
+  right:16px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: inset 0px 0px 0px 2px #FF3E79;
+  margin-left: auto;
+
+  transition: .2s ease-in;
+  &::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    width: 10px;
+    height: 10px;
+    border-right: solid 2px #FF3E79;
+    border-bottom: solid 2px #FF3E79;
+    border-radius: 1px;
+    transform: rotate(-45deg);
+  }
+  &:hover{
+    box-shadow: none;
+    background-color: $light-red;
+    &::after{
+      border-right: solid 2px white;
+      border-bottom: solid 2px white;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+// .slider__button::after{
+//   content: "";
+//   display: block;
+//   position: absolute;
+//   top: 14px;
+//   right: 16px;
+//   width: 10px;
+//   height: 10px;
+//   border-right: solid 2px #FF3E79;
+//   border-bottom: solid 2px #FF3E79;
+//   border-radius: 1px;
+//   transform: rotate(-45deg);
+  
+
+// }
+
+.button{
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  background-color: #FF3E79;
+
+  padding: 0px;
+  transition: .2s linear;
+  &:hover{
+    background-color: rgb(0, 4, 255);
+    opacity: .4;
+    transform: scale(1.1);
+  }
+
+}
+
+
+.icon-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+
+
+
+.button__menu{
+  margin-right: 16px;
+
+  background-image: url(/src/assets/img/icons/menu.svg);
+
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  margin:0;
+}
+
+.button__repair{
+
+  
+  background-image: url(/src/assets/img/icons/repair.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+}
+
+.button__search{
+  background-image: url(/src/assets/img/icons/search.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+}
+
+.button__call{
+  background-image: url(/src/assets/img/icons/call.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+}
+
+.button__message{
+  background-image: url(/src/assets/img/icons/message.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+}
+
+.button__profile{
+  background-image: url(/src/assets/img/icons/profile.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+}
+
+.button__close{
+  background-image: url(/src/assets/img/icons/close.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+}
+
+.button__slide-search{
+  background-image: url(/src/assets/img/icons/slidenavSearch.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+}
+

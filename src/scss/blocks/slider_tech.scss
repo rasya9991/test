@@ -1,0 +1,38 @@
+.swiper-tech-slide{
+  width: 224px;
+  height: 160px;
+}
+.slider__button-tech{
+  margin-top: 88px;
+}
+
+.tech-slide_text{
+  display: flex;
+  margin-bottom: 100px;
+}
+
+
+@media(min-width:768px){
+  .swiper-wrapper-tech{
+    gap:24px;
+  }
+  
+}
+
+@media(min-width:1440px){
+
+  .swiper-wrapper-tech{
+    gap:32px;
+  }
+  .swiper-slide-hidden:nth-child(4){
+    display:flex
+  }
+
+  .swiper-slide-hidden:nth-child(7){
+    display:none
+  }
+  .swiper-slide-hidden:nth-child(8){
+    display:none
+  }
+
+}

@@ -1,0 +1,25 @@
+@import '~normalize.css';
+@import 'swiper/swiper-bundle';
+
+
+@import 'variables/variables';
+
+
+@import 'base/fonts';
+@import 'base/bodystyle';
+
+@import 'base/icons';
+
+@import 'blocks/aside';
+@import 'blocks/modal_call';
+@import 'blocks/modal_feedback';
+
+@import 'blocks/header';
+@import 'blocks/page_header';
+@import 'blocks/slidenav';
+@import 'blocks/page_main';
+@import 'blocks/title';
+@import 'blocks/slider';
+@import 'blocks/slider_tech';
+@import 'blocks/slider_price';
+@import 'blocks/page_footer'

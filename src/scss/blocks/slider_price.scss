@@ -1,0 +1,161 @@
+.swiper-wrapper_services{
+  // align-items: center;
+}
+.swiper-slide_service{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+
+  width: 260px;
+  height: 200px;
+}
+
+.swiper-slide__content_service{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+.service-info {
+  font-weight: $font-medium;
+  font-size: 14px;
+  line-height: 16px;
+  color: $light-text-color;
+}
+.service-text{
+  display: block;
+  margin-top:4px ;
+  font-weight: $font-regular;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  font-size: 14px;
+  color: $text-color;
+}
+
+.service__button-text{
+  text-transform: uppercase;
+  color: white;
+  font-weight: $font-bold;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  font-size: 12px;
+  &::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 11px;
+    right: 16px;
+    width: 7px;
+    height: 7px;
+
+    background-color: transparent;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    border-radius: 3px;
+    transform: rotate(-45deg);
+  }
+}
+
+@media(min-width:768px) {
+  
+  .service-info--hidden{
+    display: none;
+  }
+  .swiper-wrapper_services{
+    flex-direction: column;
+    justify-content: start;
+    gap:0;
+  }
+
+  .swiper-slide__content_service{
+    flex-direction: row;
+    justify-content: start;
+    margin-right: 150px
+
+  }
+  .swiper-slide_service{
+    align-items: center;
+
+    width: 720px;
+    height: 64px;
+    border-radius: 0;
+    box-shadow: none;
+    &::before{
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 16px;
+
+      width: 688px;
+      height: 1px;
+      background-color: #EAEAEA;
+      z-index: 2;
+    }
+    &:first-child{
+      margin-top: 31px;
+    }
+  }
+  .service-name{
+    width: 348px;
+  }
+  .addition-name::before{
+    content: "Ремонтные услуги";
+    display: block;
+    position: absolute;
+    top: -25px;
+    color: #7E7E82;
+    z-index: 2;
+    
+  }
+  .addition-price::before{
+    content: "Цена";
+    display: block;
+    position: absolute;
+    top: -25px;
+    color: #7E7E82;
+    z-index: 2;
+    
+  }
+  .addition-time::before{
+    content: "Срок";
+    display: block;
+    position: absolute;
+    top: -25px;
+    color: #7E7E82;
+    z-index: 2;
+    
+  }
+  .service-price{
+    width: 74px;
+  }
+  .service-time{
+    width: 100px;
+  }
+}
+
+@media(min-width:1440px){
+  .swiper-slide_service{
+    width: 1056px;
+    flex-direction: row;
+
+    &::before{
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 24px;
+
+      width: 1008px;
+      height: 1px;
+      background-color: #EAEAEA;
+      z-index: 2;
+    }
+    .swiper-slide__content_service{
+
+      gap: 122px;
+    }
+
+  }
+}

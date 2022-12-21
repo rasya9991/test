@@ -1,0 +1,184 @@
+/* ABOUT US */
+
+.page__main{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -5px;
+}
+
+.page__about-us{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding:0 16px;
+
+  
+}
+
+
+.about-us__text{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+
+  color: #1B1C21;
+
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+
+.addition-link{
+  text-decoration: none;
+  color: #1B1C21;
+}
+
+// .text__addition-first{
+//   display: none;
+// }
+
+// .text__addition-second{
+//   display: none;
+// }
+.about-us__text--hidden{
+  display: none;
+}
+
+.addition{
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  margin-left: 0px;
+}
+
+.addition::before{
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 10px;
+  background-color:#F8F8F8 ;
+  background-image: url(/src/assets/img/icons/readmore.svg);
+
+  margin-left:0 ;
+  margin-right: 16px;
+
+
+}
+
+.page__img{
+  display: flex;
+  align-self: flex-start;
+  
+}
+.photo{
+  width: auto;
+  margin-top:20px;
+}
+
+@media(min-width:768px){
+  
+  .text__addition-first{
+    display: none;
+  }
+
+  .page__main{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  .page__article{
+
+    display: flex;
+  }
+
+  .page__img{
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+
+  }
+  .photo{
+    margin-top:0px;
+    width: auto;
+    border-radius: 4px;
+  }
+
+
+  .page__about-us{
+    display: flex;
+    align-self: flex-start;
+    padding:0 42px 0 24px;
+  }
+
+
+  .about-us__text{
+    width: 312px;
+  }
+
+
+}
+
+@media(min-width:1440px){
+  .text__addition-first{
+    display: none;
+  }
+
+  .photo{
+    margin-top:0px;
+    width: 531px;
+    border-radius: 4px;
+
+  }
+
+  .button{
+    margin-left: 8px;
+  }
+  .label-button{
+    display: flex;
+    align-items: center;
+
+  }
+  .text__addition-second{
+    display: block;
+  }
+
+  .about-us__text{
+    width: 490px;
+    height: auto;
+  }
+
+  .page__img{
+    margin-left: auto
+  }
+
+  .page__about-us{
+    align-self: flex-start;
+  }
+
+  .page__main{
+    padding-right: 28px;
+    margin-bottom: 40px;
+  }
+
+  .page__article{
+
+    display: flex;
+  }
+
+
+  .about-us__text{
+    margin-left: 10px;
+  }
+
+
+  .addition{
+    margin-left: 10px;
+    padding-left: 0;
+  }
+}
+/* ABOUT US */
